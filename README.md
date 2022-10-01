@@ -22,7 +22,7 @@ The following tools helped us in the creation of our project:
 # Contact Us Section
 - ![Contact Us Section](https://github.com/sydalirza/Ghoomo-Pakistan/blob/main/Web%20capture_1-10-2022_124514_.jpeg)
 # About Us Section
-- ![About Us Section](https://github.com/sydalirza/Ghoomo-Pakistan/blob/main/Web%20capture_1-10-2022_124527_.jpeg)
+- ![About Us Section](https://github.com/sydalirza/Ghoomo-Pakistan/blob/main/Web%20capture_1-10-2022_17539_.jpeg)
 # Site Map
 - ![Site Map](https://github.com/sydalirza/Ghoomo-Pakistan/blob/main/Web%20capture_1-10-2022_124539_.jpeg) 
 
