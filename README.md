@@ -15,4 +15,4 @@ The following tools helped us in the creation of our project:
 4. JavaScript
 
 # Screenshots
-![Homepage] ()
+- ![Homepage] (https://github.com/sydalirza/Ghoomo-Pakistan/blob/main/Web%20capture_1-10-2022_124344_.jpeg)
