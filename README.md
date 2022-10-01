@@ -25,3 +25,9 @@ The following tools helped us in the creation of our project:
 - ![About Us Section](https://github.com/sydalirza/Ghoomo-Pakistan/blob/main/Web%20capture_1-10-2022_124527_.jpeg)
 # Site Map
 - ![Site Map](https://github.com/sydalirza/Ghoomo-Pakistan/blob/main/Web%20capture_1-10-2022_124539_.jpeg) 
+
+# Contributors
+- Muhammad Qalb-e-Ali
+- Musaib Gillani
+- Daniyal Shah
+- Muhammad Wahaj-ud-din
