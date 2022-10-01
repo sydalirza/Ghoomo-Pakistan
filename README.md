@@ -30,4 +30,4 @@ The following tools helped us in the creation of our project:
 - Muhammad Qalb-e-Ali
 - Musaib Gillani
 - Daniyal Shah
-- Muhammad Wahaj-ud-din
+- Muhammad Tayyab
