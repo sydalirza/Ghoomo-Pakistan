@@ -100,35 +100,54 @@
   };
 
     const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    const database = getDatabase(app);
+  const analytics = getAnalytics(app);
+  const database = getDatabase(app);
 
-    function validateForm() {
-      // Your validation code
+  function validateForm() {
+    const firstName = document.forms["query"]["firstname"].value;
+    const lastName = document.forms["query"]["lastname"].value;
+    const email = document.forms["query"]["Email"].value;
+    const query = document.forms["query"]["subject"].value;
 
-      // If the form is valid, save data to the database
-      saveToDatabase();
+    // Basic validation
+    if (firstName === "" || lastName === "" || email === "" || query === "") {
+      alert("All fields must be filled out");
+      return false;
     }
 
-    function saveToDatabase() {
-      const firstName = document.forms["query"]["firstname"].value;
-      const lastName = document.forms["query"]["lastname"].value;
-      const email = document.forms["query"]["Email"].value;
-      const query = document.forms["query"]["subject"].value;
-
-      const newQueryRef = push(ref(database, 'queries'));
-
-      set(newQueryRef, {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        query: query
-      }).then(() => {
-        alert("Form submitted successfully!");
-      }).catch((error) => {
-        console.error("Error saving data to database:", error);
-      });
+    // Email validation using a simple regular expression
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address");
+      return false;
     }
+
+    // If the form is valid, save data to the database
+    saveToDatabase();
+
+    // Prevent the form from submitting (since we're handling submission with JavaScript)
+    return false;
+  }
+
+  function saveToDatabase() {
+    const firstName = document.forms["query"]["firstname"].value;
+    const lastName = document.forms["query"]["lastname"].value;
+    const email = document.forms["query"]["Email"].value;
+    const query = document.forms["query"]["subject"].value;
+
+    const newQueryRef = push(ref(database, 'queries'));
+
+    set(newQueryRef, {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      query: query
+    }).then(() => {
+      alert("Form submitted successfully!");
+    }).catch((error) => {
+      console.error("Error saving data to database:", error);
+    });
+  }
   </script>
 </body>
 </html>
