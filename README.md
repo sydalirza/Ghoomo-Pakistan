@@ -9,7 +9,7 @@ The website serves as tourism portfolio for the country of Pakistan, where touri
 
 # Specifications
 The following tools helped us in the creation of our project:
-1. HTML
+1. HTML.
 2. CSS
 3. Bootstrap
 4. JavaScript
